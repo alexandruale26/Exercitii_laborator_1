@@ -12,7 +12,9 @@ namespace Exercitii_laborator_1
             //Ex4();
             //Ex5();
             //Ex6();
-            Ex7();
+            //Ex7();
+            //Ex8();
+            Ex9();
         }
 
         static void Ex1()
@@ -139,7 +141,36 @@ namespace Exercitii_laborator_1
             Console.WriteLine($"{pos1}   {pos2}   {pos3}");
         }
 
-        static void Ex7() 
+        static void Ex7()
+        {
+            // Scrieti un program care va verifica daca un numar citit de la tastatura este par sau
+            // impar. In cazul in care numarul este par, programul va afisa “par” iar in caz contrar impar.
+
+            Console.WriteLine("Introduceti numarul");
+            int numar = int.Parse(Console.ReadLine());
+
+            if (numar % 2 == 0) Console.WriteLine($"Numarul {numar} este par");
+            else Console.WriteLine($"Numarul {numar} este impar");
+        }
+
+        static void Ex8()
+        {
+            /* Se citesc doua numere de la tastatura, x si y. Scrieti un program care 
+               va verifica daca x este divizibil cu y. In cazul in care x este divizibil cu y, 
+               programul va afisa divizibil ” iar in caz contrar "indivizibil".
+            */
+
+            Console.WriteLine("Introduceti primul numar");
+            int x = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Introduceti al doilea numar");
+            int y = int.Parse(Console.ReadLine());
+
+            if (x % y == 0) Console.WriteLine("Divizibil");
+            else Console.WriteLine("Indivizibil");
+        }
+
+        static void Ex9()
         {
 
         }
