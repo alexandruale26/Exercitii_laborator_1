@@ -11,8 +11,8 @@ namespace Exercitii_laborator_1
             //Ex3();
             //Ex4();
             //Ex5();
-            Ex6();
-            //Ex7();
+            //Ex6();
+            Ex7();
         }
 
         static void Ex1()
@@ -135,11 +135,12 @@ namespace Exercitii_laborator_1
                 }
             }
 
-            Console.WriteLine("Numerele asezate descrescator:\n");
+            Console.WriteLine("Numerele asezate descrescator:");
             Console.WriteLine($"{pos1}   {pos2}   {pos3}");
         }
 
-        static void Ex7() {
+        static void Ex7() 
+        {
 
         }
     }
