@@ -14,7 +14,8 @@ namespace Exercitii_laborator_1
             //Ex6();
             //Ex7();
             //Ex8();
-            Ex9();
+            //Ex9();
+            //Ex10();
         }
 
         static void Ex1()
@@ -172,7 +173,44 @@ namespace Exercitii_laborator_1
 
         static void Ex9()
         {
+            // Scrieti un program care interschimba valoarea a doua variabile intregi
 
+            Console.WriteLine("Introduceti x");
+            int x = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Introduceti y");
+            int y = int.Parse(Console.ReadLine());
+
+            int middleMan;
+
+            middleMan = x;
+            x = y;
+            y = middleMan;
+
+            Console.WriteLine($"Noile valori: x = {x} si y = {y}");
+        }
+
+        static void Ex10()
+        {
+            // Scrieti un program care va afisa suma cifrelor unui numar 
+            // intreg citit de la tastatura. Numarul are exact 2 cifre.
+
+            Console.WriteLine("Introduceti numarul");
+            int numar = int.Parse(Console.ReadLine());
+
+            int suma = 0;
+
+            while (numar!= 0)
+            {
+                suma += numar % 10;
+                numar /= 10;
+            }
+
+            Console.WriteLine($"Suma cifrelor unui numar este  -> {suma}");
+            
+            
+
+            
         }
     }
 }
